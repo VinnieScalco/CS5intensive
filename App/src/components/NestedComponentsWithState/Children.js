@@ -6,8 +6,8 @@ class Children extends React.Component {
         super();
         this.state = {
             children: [
-            {name: 'Solomon', age:'Thirty'},
-            {name: 'Gideon', age: 'Twenty-Seven'}
+            {name: 'one', age:'two'},
+            {name: 'a', age: 'three'}
             ],
             };
     }
@@ -15,7 +15,7 @@ class Children extends React.Component {
         return (
             <div>
                 { this.state.children.map((child, index) => {
-                    return <Child data={child}/>
+                    return <Child key = {index} data={child}/>
                 })
                 }
             </div>
