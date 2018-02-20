@@ -8,10 +8,11 @@ export default class ComponentName extends Component {
         }
     }
     componentDidMount() {
+        this.setState({ blanket: this.props.blanket });
     }
     render() {
         return (
-            <div className='greeting'>{}</div>
+            <div className='greeting'>{`Hello, my blanket is called: ${this.state.blanket}`}</div>
         );
     }
 }
