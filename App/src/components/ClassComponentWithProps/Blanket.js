@@ -7,7 +7,7 @@ class Blanket extends React.Component{
     }
     render() {
         return (
-            <div>My prop received: {this.word}</div>
+            <div>Prop received: {this.word}</div>
         );
     }
 }
